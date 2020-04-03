@@ -1,0 +1,19 @@
+[Plymouth Theme]
+Name=McOSX - Plymouth Boot Theme
+Description=McOSX - Plymouth Boot Theme for Ubuntu/Kubuntu/Xubuntu 18.04 & 19.04
+ModuleName=McOSX
+
+[Repo]
+Version=1.0
+Branch=master
+Release=r1.3
+Author=DoOnlineNL
+
+[Legal]
+ReadMe=/usr/share/plymouth/themes/McOSX/README.MD
+Contributed=/usr/share/plymouth/themes/McOSX/README.MD
+License=/usr/share/plymouth/themes/McOSX/LICENSE.MD
+
+[McOSX]
+ImageDir=/usr/share/plymouth/themes/McOSX/src/image
+ScriptFile=/usr/share/plymouth/themes/McOSX/bin/plymouth.script
