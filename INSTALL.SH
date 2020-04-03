@@ -23,7 +23,9 @@ else
 	  		echo -e "${Text}Please wait until installation finishes...";
 	  	sleep 1.5;
 	  		echo -e "${NC}Copying all 'McOSX - Plymouth Boot Theme v1.0-r1.3' theme files to plymouth's theme directory...";
-	  		cp -iRv ./ /usr/share/plymouth/themes/McOSX;
+	  		cp -iRvy ./* /usr/share/plymouth/themes/McOSX && \
+			cd /usr/share/plymouth/themes && \
+			ln -s McOSX/ /usr/${LIB}/plymouth/themes/ || clear && echo -e "${Text}Error copying files to plymouth themes directory and making a symlink in ${LIB} for older machines..." && echo -e "${NC}Exiting!" && sleep 2 && exit 1;
 	  	sleep 1.5;
 	  		echo -e "${NC}Finished copying all 'McOSX - Plymouth Boot Theme v1.0-r1.3' theme files to plymouth's theme directory...";
 	  	sleep 1.0;
